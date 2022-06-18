@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Sports Quiz</title>
+</head>
+<body>
+    <header>
+        <p>
+            H-Town Sports Quiz
+        </p>
+        <p>time left: <span id="timer">90 sec</span></p>
+    </header>
+    <section id="start-question">
+        <div>
+            <h1>
+                Welcome to the Houston Sports Quiz
+            </h1>
+        </div>
+        <div>
+            <button id="startquiz">Start Quiz</button>
+        </div>
+    </section>
+    <section id="question-1" class="hidden">
+        <div>
+            <h1>
+                What is the name of the basketball team in Houston?
+            </h1>
+        </div>
+        <div>
+            <button onclick="checkAnswer(true)">Rockets</button>
+            <button onclick="checkAnswer(false)">Space Cowboys</button>
+            <button onclick="checkAnswer(false)">Texans</button>
+            <button onclick="checkAnswer(false)">Ponchos</button>
+    
+        </div>
+    </section>
+    <section id="question-2" class="hidden">
+        <div>
+            <h1>
+                Who wears #0 for the Houston Rockets?
+            </h1>
+        </div>
+        <div>
+            <button onclick="checkAnswer(false)">James</button>
+            <button onclick="checkAnswer(true)">Green</button>
+            <button onclick="checkAnswer(false)">Williams</button>
+            <button onclick="checkAnswer(false)">Scola</button>
+        </div>
+    </section>
+    <section id="question-3" class="hidden">
+        <div>
+            <h1>
+                Who is the best player in Rockets history?
+            </h1>
+        </div>
+        <div>
+            <button onclick="checkAnswer(false)">Harden</button>
+            <button onclick="checkAnswer(false)">Yao</button>
+            <button onclick="checkAnswer(false)">Drexler</button>
+            <button onclick="checkAnswer(true)">Olajuwon</button>
+        </div>
+    </section>
+    <section id="question-4" class="hidden">
+        <div>
+            <h1>
+                What is the name of the arena the team plays in?
+            </h1>
+        </div>
+        <div>
+            <button onclick="checkAnswer(false)">Minute Maid Park</button>
+            <button onclick="checkAnswer(false)">NRG Stadium</button>
+            <button onclick="checkAnswer(true)">Toyota Center</button>
+            <button onclick="checkAnswer(false)">PNC Stadium</button>
+        </div>
+    </section>
+    <section id="question-5" class="hidden">
+        <div>
+            <h1>
+                What are the team colors?
+            </h1>
+        </div>
+        <div>
+            <button onclick="checkAnswer(true)">red/white</button>
+            <button onclick="checkAnswer(false)">purple/yellow</button>
+            <button onclick="checkAnswer(false)">black/silver</button>
+            <button onclick="checkAnswer(false)">green/white</button>
+        </div>
+    </section>
+    <footer class="hidden" id="end">
+        <p>
+            Congrats you finally finished.
+        </p>
+        <h2>
+            Final Score: <span id="score"></span>
+        </h2>
+    </footer>
+
+    <script src="./assets/javascript/script.js"></script>
+</body>
+</html>
